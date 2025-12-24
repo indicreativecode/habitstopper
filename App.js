@@ -1,7 +1,8 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { AppProvider } from './src/context/AppContext';
 
 // Screens
@@ -11,7 +12,7 @@ import OnboardingScreen from './src/screens/OnboardingScreen';
 import DailyScreen from './src/screens/DailyScreen';
 import TimelineScreen from './src/screens/TimelineScreen';
 
-const Stack = createNativeStackNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
@@ -22,7 +23,7 @@ export default function App() {
           initialRouteName="Home"
           screenOptions={{
             headerShown: false,
-            animation: 'none',
+            cardStyle: { backgroundColor: '#0F0F0F' },
           }}
         >
           <Stack.Screen name="Home" component={HomeScreen} />
