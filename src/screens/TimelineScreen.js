@@ -261,8 +261,7 @@ const styles = StyleSheet.create({
   },
   nextContent: {
     borderWidth: 1,
-    borderColor: '#333333',
-    borderStyle: 'dashed',
+    borderColor: '#444444',
   },
   milestoneHeader: {
     flexDirection: 'row',
