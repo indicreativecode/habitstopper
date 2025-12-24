@@ -22,8 +22,7 @@ export default function App() {
           initialRouteName="Home"
           screenOptions={{
             headerShown: false,
-            contentStyle: { backgroundColor: '#0F0F0F' },
-            animation: 'slide_from_right',
+            animation: 'none',
           }}
         >
           <Stack.Screen name="Home" component={HomeScreen} />
